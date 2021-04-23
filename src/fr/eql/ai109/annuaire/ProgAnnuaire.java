@@ -6,8 +6,10 @@ public class ProgAnnuaire {
 		// TODO Auto-generated method stub
 
 		StagiaireDao stagiaireDao = new StagiaireDao();
-		stagiaireDao.determinerTaillesMax();
 		stagiaireDao.lireFichierStagiaire();
+		stagiaireDao.determinerTaillesMax();
+		stagiaireDao.creerFichierStructure();
+		stagiaireDao.afficherSurConsole();
 	}
 
 }

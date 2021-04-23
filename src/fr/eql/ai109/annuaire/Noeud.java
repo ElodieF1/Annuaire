@@ -44,31 +44,21 @@ public class Noeud {
 		this.filsDroit = filsDroit;
 	}
 
-	public void ajouterElement (Stagiaire stagiaire, Noeud noeud) {
-		if (stagiaireNoeudCourant == null) {
-			stagiaireNoeudCourant = stagiaire;
-			filsGauche = null;
-			filsDroit = null;
-			System.out.println(stagiaireNoeudCourant.getNom() + " est insere");
+/*	public void ajouterElement (Stagiaire stagiaire, Noeud noeud) {
+		if (noeud == null) {
+			return new Noeud (stagiaire, null, null);
 		}
 		else {
-			if ((stagiaire.getNom().compareToIgnoreCase(stagiaireNoeudCourant.getNom()) < 0)) {
-				ajouterElement(stagiaire, noeud.getFilsGauche());
+			if (stagiaire.getNom().compareToIgnoreCase(stagiaireNoeudCourant.getNom()) < 0) {
+				filsGauche = ajouterElement(stagiaire, noeud.getFilsGauche());
 			}
-			else if ((stagiaire.getNom().compareToIgnoreCase(stagiaireNoeudCourant.getNom()) > 0)) {
-				ajouterElement(stagiaire, noeud.getFilsDroit());
+			else if (stagiaire.getNom().compareToIgnoreCase(stagiaireNoeudCourant.getNom()) > 0) {
+				filsDroit = ajouterElement(stagiaire, noeud.getFilsDroit());
 			}
 			else {
-			//	System.out.println("existe dejà");
+				System.out.println("deja ajoute");
 			}
+			return noeud;
 		}
-	}
-	
-	public void traverseInOrder(Noeud node) {
-	    if (node != null) {
-	        traverseInOrder(node.getFilsGauche());
-	        System.out.print(" " + node.getStagiaireNoeudCourant().getNom());
-	        traverseInOrder(node.getFilsDroit());
-	    }
-	}
+	}*/
 }
